@@ -1,0 +1,71 @@
+---
+title       : Weather Forecast Shiny application
+subtitle    : Developing Data Products
+author      : 
+job         : Course Project
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Overview
+
+
+Importance of Weather Foecasting:
+
+1. Weather forecasts and warnings are the most important services provided by the meteorological profession. 
+2. Forecasts are used by government and industry to protect life and property and to improve the efficiency of operations.
+3. Forecasts are usedby individuals to plan a wide range of daily activities.
+4. The numerical prediction models have proved successful in 1 to 5 day prediction, cutting edge research make it possible to predict weather for periods beyond 10 to 14 days. 
+5. Forecast methods and tools for monthly outlooks have been a mixture of dynamical and statistical techniques. 
+6. The crucial components for weather forecasting are sky condition, temperature, humidity, wind statistics. 
+
+--- .class #id 
+
+## Weather Forecast applicatons
+
+There are a lots of weather forecast application available in different domain:
+
+### Webapplication:
+
+http://www.weather.com/newscenter/nationalforecast/
+
+In the tab "Check local weather:" put the zip code or city name and it will give
+you the current weather and dependable forecast.
+
+### Smart-phone application:
+
+http://www.weather.com/services/mobilesplash.html
+
+For IOS, android, windows moblie OS weather forecasting applications are available. 
+
+--- .class #id 
+
+## Weather Forecast Shiny applicaton
+
+The developed simple Shiny app for current weather and forecast of the day:
+http://sayandev.shinyapps.io/Course_Project
+
+Where the user need to input the name of his/her city with two digit 
+country code (optional). 
+
+The shiny app will fetch info the free server api http://openweathermap.org/api and potray the current weather information
+with the prediction for the day:
+
+1. Overall weather information.
+2. Current, minimum and maximum temeprature (in Farenhite).
+3. Humidity.
+4. Wind condition.
+
+--- .class #id 
+
+## Embedded R plots
+```{r}
+data(nhtemp);require(stats); require(graphics); plot(nhtemp, main = "Mean temperature in New Haven, from 1912 to 1971",ylab = "Mean annual temperature in New Haven, CT (deg. F)")
+```
+
+
+

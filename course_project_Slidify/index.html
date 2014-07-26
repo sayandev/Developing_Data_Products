@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Forecast Shiny application</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Weather Forecast Shiny application">
+  <meta name="author" content="">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Weather Forecast Shiny application</h1>
+    <h2>Developing Data Products</h2>
+    <p><br/>Course Project</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Overview</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Importance of Weather Foecasting:</p>
+
+<ol>
+<li>Weather forecasts and warnings are the most important services provided by the meteorological profession. </li>
+<li>Forecasts are used by government and industry to protect life and property and to improve the efficiency of operations.</li>
+<li>Forecasts are usedby individuals to plan a wide range of daily activities.</li>
+<li>The numerical prediction models have proved successful in 1 to 5 day prediction, cutting edge research make it possible to predict weather for periods beyond 10 to 14 days. </li>
+<li>Forecast methods and tools for monthly outlooks have been a mixture of dynamical and statistical techniques. </li>
+<li>The crucial components for weather forecasting are sky condition, temperature, humidity, wind statistics. </li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Weather Forecast applicatons</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>There are a lots of weather forecast application available in different domain:</p>
+
+<h3>Webapplication:</h3>
+
+<p><a href="http://www.weather.com/newscenter/nationalforecast/">http://www.weather.com/newscenter/nationalforecast/</a></p>
+
+<p>In the tab &quot;Check local weather:&quot; put the zip code or city name and it will give
+you the current weather and dependable forecast.</p>
+
+<h3>Smart-phone application:</h3>
+
+<p><a href="http://www.weather.com/services/mobilesplash.html">http://www.weather.com/services/mobilesplash.html</a></p>
+
+<p>For IOS, android, windows moblie OS weather forecasting applications are available. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Weather Forecast Shiny applicaton</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The developed simple Shiny app for current weather and forecast of the day:
+<a href="http://sayandev.shinyapps.io/Course_Project">http://sayandev.shinyapps.io/Course_Project</a></p>
+
+<p>Where the user need to input the name of his/her city with two digit 
+country code (optional). </p>
+
+<p>The shiny app will fetch info the free server api <a href="http://openweathermap.org/api">http://openweathermap.org/api</a> and potray the current weather information
+with the prediction for the day:</p>
+
+<ol>
+<li>Overall weather information.</li>
+<li>Current, minimum and maximum temeprature (in Farenhite).</li>
+<li>Humidity.</li>
+<li>Wind condition.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Embedded R plots</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">data(nhtemp);require(stats); require(graphics); plot(nhtemp, main = &quot;Mean temperature in New Haven, from 1912 to 1971&quot;,ylab = &quot;Mean annual temperature in New Haven, CT (deg. F)&quot;)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Overview'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Weather Forecast applicatons'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Weather Forecast Shiny applicaton'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Embedded R plots'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
